@@ -2,6 +2,6 @@
 
 https://www.udemy.com/share/101WfeBEUadl1bRXg=/
 
-## Resource
+## Resources
 
 https://codingheroes.io/resources/
