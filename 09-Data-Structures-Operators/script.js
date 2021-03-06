@@ -21,4 +21,31 @@ const restaurant = {
       close: 24,
     },
   },
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
 };
+
+const friend = ["Gaya", 1997, "Female"];
+
+// Basic Destructuring
+const [firstName, yearOfBirth, gender] = friend;
+console.log(firstName, yearOfBirth, gender);
+
+// Re-assigning variable using Destructuring
+let [main, secondary] = restaurant.categories;
+console.log(main, secondary);
+
+[secondary, main] = [main, secondary];
+console.log(main, secondary);
+
+// Destructuring Array returned from Function
+const [starter, mainCourse] = restaurant.order(0, 2);
+console.log(starter, mainCourse);
+
+// Destructuring Nested Arrays
+const nested = [1, 2, [3, 4, 5]];
+
+const [p, , [q, r, s, t = 0]] = nested;
+console.log(p, q, r, s, t);
