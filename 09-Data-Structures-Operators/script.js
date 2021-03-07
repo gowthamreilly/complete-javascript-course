@@ -40,7 +40,7 @@ console.log(main, secondary);
 [secondary, main] = [main, secondary];
 console.log(main, secondary);
 
-// Destructuring Array returned from Function
+// Destructuring Array returned from a Function
 const [starter, mainCourse] = restaurant.order(0, 2);
 console.log(starter, mainCourse);
 
